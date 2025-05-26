@@ -1,0 +1,45 @@
+<div class="contenido-principal">
+  <form (ngSubmit)="onRegister()" #loginForm="ngForm" class="formulario-login">
+    <h1 class="texto1">Registro</h1>
+    <input
+      type="text"
+      placeholder="nombre"
+      class="input-login"
+      name="nombre"
+      id="nombre"
+      [(ngModel)]="nombre"
+      required
+      autocomplete="username"
+    />
+    <input
+      type="email"
+      placeholder="correo"
+      class="input-login"
+      name="correo"
+      id="correo"
+      [(ngModel)]="correo"
+      required
+      autocomplete="email"
+    />
+    <input
+      type="password"
+      placeholder="contraseña"
+      class="input-login"
+      name="contrasena"
+      id="contrasena"
+      [(ngModel)]="contrasena"
+      required
+      autocomplete="new-password"
+    />
+    <input
+      type="date"
+      placeholder="fecha de nacimiento"
+      class="input-login"
+      name="fechaDeNacimiento"
+      id="fechaDeNacimiento"
+      [(ngModel)]="fechaDeNacimiento"
+      required
+    />
+    <button class="btn1" type="submit" [disabled]="loginForm.invalid">Registrar</button>
+  </form>
+</div>

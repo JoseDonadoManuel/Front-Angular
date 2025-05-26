@@ -1,0 +1,26 @@
+<div class="contenido-principal">
+  <form (ngSubmit)="onLogin()" #loginForm="ngForm" class="formulario-login">
+    <h1 class="texto1">Login</h1>
+    <input
+      type="text"
+      placeholder="Correo"
+      class="input-login"
+      name="correo"
+      id="correo"
+      [(ngModel)]="correo"
+      required
+      autocomplete="username"
+    />
+    <input
+      type="password"
+      placeholder="Contraseña"
+      class="input-login"
+      name="contrasena"
+      id="contrasena"
+      [(ngModel)]="contrasena"
+      required
+      autocomplete="current-password"
+    />
+    <button class="btn1" type="submit" [disabled]="loginForm.invalid">Login</button>
+  </form>
+</div>
