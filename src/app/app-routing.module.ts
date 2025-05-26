@@ -5,6 +5,7 @@ import { ClienteComponent } from './core/models/cliente/cliente.component';
 import { ErrorComponent } from './core/models/error/error.component';
 import { RegistroComponent } from './core/models/registro/registro.component';
 
+// Definición de las rutas de la aplicación
 const routes: Routes = [
   {path: 'login',component: LoginComponent},
   {path: '', component: LoginComponent},
