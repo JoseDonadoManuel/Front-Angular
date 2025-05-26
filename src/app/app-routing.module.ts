@@ -14,7 +14,7 @@ const routes: Routes = [
 
 
 
-
+//  // Rutas de error
   {path: 'error', component:ErrorComponent},
   {path:'**', redirectTo: 'error', pathMatch: 'full'}
 
